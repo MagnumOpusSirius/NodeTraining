@@ -74,19 +74,53 @@ var item=["pencil", 1, "sharpner", "scale"]
 //     console.log(item1[i]); // item1[pencil] //thats why it is undefined
 // }
 
-console.log(item)
-item.push("eraser");
-console.log(item)
+// console.log(item)
+// item.push("eraser");
+// console.log(item)
 
-item.splice(2,1,"abc") // this is used to replace the value at the index 2 with abc
-console.log(item)
+// item.splice(2,1,"abc") // this is used to replace the value at the index 2 with abc
+// console.log(item)
 
-item.unshift('gum')
-console.log(item)
+// item.unshift('gum')
+// console.log(item)
 
-item.pop()
-console.log(item)
+// item.pop()
+// console.log(item)
 
-item.splice(2,2) //splice( index, no of elements to be deleted, elements to be added)
-console.log(item) 
+// item.splice(2,2) //splice( index, no of elements to be deleted, elements to be added)
+// console.log(item) 
 
+// var e= {id: 1, name: 'sachin', age: 20} // what type of object is this? // this is called object literal
+// console.log(typeof e)
+// console.log(e.id)
+// console.log(e.name)
+// console.log(e.age)
+// e.address= 'USA'
+// console.log(e)
+
+
+//Array of objects:
+
+// var employees= [
+//     {id: 1, name: 'sachin', age: 20},
+//     {id: 2, name: 'sachin', age: 20},
+//     {id: 3, name: 'sachin', age: 20}
+// ];
+
+// for(let i in employees) {
+//    // console.log(i);
+//     console.log(employees[i].id+"," +employees[i].name+"," +employees[i].age);
+// }
+
+// var m1=require('./myModule').people;
+
+// for(let i in m1) {
+//     console.log(m1[i].id+"," +m1[i].name+"," +m1[i].age);
+// }
+
+var sayHello = require('./myModule').sayHello;
+var display = require('./myModule').display;
+
+sayHello();
+// console.log(sayHello()); //
+//console.log(display);
