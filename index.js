@@ -62,7 +62,7 @@
 // var x = 10;
 
 //var item= ["1","2","3"];
-var item=["pencil", 1, "sharpner", "scale"]
+// var item=["pencil", 1, "sharpner", "scale"]
 
 // for(let i of item) 
 // console.log(i);
@@ -118,9 +118,84 @@ var item=["pencil", 1, "sharpner", "scale"]
 //     console.log(m1[i].id+"," +m1[i].name+"," +m1[i].age);
 // }
 
-var sayHello = require('./myModule').sayHello;
-var display = require('./myModule').display;
+// var sayHello = require('./myModule').sayHello;
+// var display = require('./myModule').display;
 
-sayHello();
+// sayHello();
 // console.log(sayHello()); //
 //console.log(display);
+
+
+// var life1= require('./myModule');
+
+// Arrow Function:
+// var sayHello = () => {
+//     console.log('Hello');
+// }
+
+// var wishes = () => console.log('Good Morning');
+// wishes();
+
+// var squares = (x) => x*x;
+// console.log(squares(5));
+
+// var add = (x,y) => x+y;
+// console.log(add(5,6));
+
+// var big = (x,y) => x>y?x:y;
+// console.log(big(5,6));
+
+// var upper= x => x.toUpperCase();
+// console.log(upper('sachin'));
+// var lower= x => x.toLowerCase();
+// console.log(lower('SACHIN'));
+// var len= x => x.length;
+// console.log(len('SACHIN'));
+
+// var z = require('./myModule').square;
+// var y = require('./myModule').add;
+// console.log(z(5)+" "+y(5,6));
+
+//Asynchronous Programming:
+// callback funtion: a function which is passed as an argument to another function
+
+
+// function name(functio){
+//     console.log("Hello");
+//     functio();
+// }
+// functionName = () => {
+//     console.log("YOO");
+// }
+// name(functionName);
+
+// function display(cb){
+//     cb();
+// }
+// function morning(){
+//     console.log("Good Morning");
+// }
+// function evening(){
+//     console.log("Good Evening");
+// }
+
+// display(morning);
+// display(evening);
+
+//callback with parameters:
+var cal=function(a,b){
+    return b(a);
+}
+var square=function(a){
+    return a*a;
+}
+var factorial=function(a){
+    var f=1;
+    for(var i=1;i<=a;i++){
+        f=f*i;
+    }
+    return f;
+}
+
+console.log(cal(5,square));
+console.log(cal(6,factorial));
